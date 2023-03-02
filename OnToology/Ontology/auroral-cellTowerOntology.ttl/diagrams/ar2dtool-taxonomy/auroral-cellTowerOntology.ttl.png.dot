@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "core:Place" "https://auroral.iot.linkeddata.es/def/cell#4G" "cell:GSM" "cell:CellTowers" "cell:UMTS" "https://auroral.iot.linkeddata.es/def/cell#5G" "geon:Feature" "cell:Network" "cell:LTE" "cell:CDMA" "core:Device" ; /*classes style*/
+	"https://auroral.iot.linkeddata.es/def/cell#4G" -> "cell:Network" [ label = "rdfs:subClassOf" ];
+	"cell:LTE" -> "cell:Network" [ label = "rdfs:subClassOf" ];
+	"core:Place" -> "geon:Feature" [ label = "rdfs:subClassOf" ];
+	"cell:UMTS" -> "cell:Network" [ label = "rdfs:subClassOf" ];
+	"cell:CDMA" -> "cell:Network" [ label = "rdfs:subClassOf" ];
+	"https://auroral.iot.linkeddata.es/def/cell#5G" -> "cell:Network" [ label = "rdfs:subClassOf" ];
+	"cell:CellTowers" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"cell:GSM" -> "cell:Network" [ label = "rdfs:subClassOf" ];
+
+}

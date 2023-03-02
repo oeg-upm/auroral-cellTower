@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "core:Place" "cell:CellTowers" "cell:Operator" "cell:Network" "geo:Point" "cell:Range" ; /*classes style*/
+	"cell:CellTowers" -> "xsd:string" [ label = "cell:cellId" ];
+	"geo:Point" -> "owl:Thing" [ label = "geo:lat" ];
+	"cell:Operator" -> "xsd:string" [ label = "cell:operatorName" ];
+	"cell:CellTowers" -> "geo:Point" [ label = "http://www.owl-ontologies.com/geo#location" ];
+	"cell:CellTowers" -> "xsd:dateTime" [ label = "cell:created" ];
+	"core:Place" -> "xsd:string" [ label = "core:name" ];
+	"geo:Point" -> "owl:Thing" [ label = "geo:long" ];
+	"cell:CellTowers" -> "cell:Operator" [ label = "cell:hasOperator" ];
+	"cell:CellTowers" -> "core:Place" [ label = "cell:country" ];
+	"cell:CellTowers" -> "cell:Range" [ label = "cell:hasRange" ];
+	"cell:CellTowers" -> "cell:Network" [ label = "cell:providesNetwork" ];
+	"core:Place" -> "xsd:string" [ label = "core:code" ];
+	"cell:Operator" -> "xsd:string" [ label = "cell:operatorId" ];
+	"cell:Network" -> "xsd:string" [ label = "cell:networkCode" ];
+	"cell:Range" -> "xsd:string" [ label = "cell:range" ];
+
+}
