@@ -1,0 +1,110 @@
+{
+  "@context" : {
+    "range" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#range",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "operatorName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#operatorName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "UMTS" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#UMTS"
+    },
+    "created" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "country" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#country",
+      "@type" : "@id"
+    },
+    "CellTowers" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#CellTowers"
+    },
+    "cellId" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#cellId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "LTE" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#LTE"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "G" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#4G"
+    },
+    "hasRange" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#hasRange",
+      "@type" : "@id"
+    },
+    "CDMA" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#CDMA"
+    },
+    "hasOperator" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#hasOperator",
+      "@type" : "@id"
+    },
+    "Range" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#Range"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "name" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "location" : {
+      "@id" : "http://www.owl-ontologies.com/geo#location",
+      "@type" : "@id"
+    },
+    "networkCode" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#networkCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Network" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#Network"
+    },
+    "Place" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "Operator" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#Operator"
+    },
+    "operatorId" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#operatorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Device" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+    },
+    "providesNetwork" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#providesNetwork",
+      "@type" : "@id"
+    },
+    "GSM" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cell#GSM"
+    },
+    "code" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}
