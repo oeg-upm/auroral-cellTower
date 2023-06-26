@@ -1,0 +1,253 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/cell#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#8ca23bbe6d29253f61201ff69f64e13f>
+        a               sh:NodeShape ;
+        rdfs:label      "Network" ;
+        sh:name         "Network" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#61a8b8d2fa833508abea68d1b95bc507> ;
+        sh:targetClass  :Network .
+
+<https://astrea.linkeddata.es/shapes#65bfa643752cf5e2a6d08c688da545bc>
+        a            sh:PropertyShape ;
+        rdfs:label   "range" ;
+        sh:datatype  xsd:string ;
+        sh:name      "range" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :range ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#0705d79d023ad5774286503e07efc599>
+        a            sh:PropertyShape ;
+        rdfs:label   "has operator" ;
+        sh:class     :Operator ;
+        sh:name      "has operator" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasOperator .
+
+<https://astrea.linkeddata.es/shapes#a0fc3e9f229688bc8950adec65f6178a>
+        a               sh:NodeShape ;
+        rdfs:label      "Operator" ;
+        sh:name         "Operator" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#8205776f6cc763703225eeb9505b46a9> , <https://astrea.linkeddata.es/shapes#1bebeb416cd25031a409be367b8ea578> ;
+        sh:targetClass  :Operator .
+
+<https://astrea.linkeddata.es/shapes#e998971669406de42a98dd8636c18ba2>
+        a               sh:NodeShape ;
+        rdfs:label      "5 G" ;
+        sh:name         "5 G" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :5G .
+
+<https://astrea.linkeddata.es/shapes#04cd897cbb74434ab4ae511d32134236>
+        a            sh:PropertyShape ;
+        rdfs:label   "has range" ;
+        sh:class     :Range ;
+        sh:name      "has range" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasRange .
+
+<https://astrea.linkeddata.es/shapes#02bab2c0f81ab1bdbd3bc6c9078df297>
+        a               sh:NodeShape ;
+        rdfs:label      "Cell Towers" ;
+        sh:name         "Cell Towers" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0705d79d023ad5774286503e07efc599> , <https://astrea.linkeddata.es/shapes#8e4189cde6df9931cf443d2b04401c2e> , <https://astrea.linkeddata.es/shapes#f216b1fc3d3cfd7519a471207d7ac1a4> , <https://astrea.linkeddata.es/shapes#4d34f2f7490d5ae914fa9d6df7367aaf> , <https://astrea.linkeddata.es/shapes#42a18bf7fa45c9586bad5e9683888d01> , <https://astrea.linkeddata.es/shapes#04cd897cbb74434ab4ae511d32134236> , <https://astrea.linkeddata.es/shapes#da4cc23f2fbb9fc9363501951269094c> ;
+        sh:targetClass  :CellTowers .
+
+<https://astrea.linkeddata.es/shapes#8205776f6cc763703225eeb9505b46a9>
+        a            sh:PropertyShape ;
+        rdfs:label   "operator id" ;
+        sh:datatype  xsd:string ;
+        sh:name      "operator id" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :operatorId ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#61a8b8d2fa833508abea68d1b95bc507>
+        a            sh:PropertyShape ;
+        rdfs:label   "network code" ;
+        sh:datatype  xsd:string ;
+        sh:name      "network code" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :networkCode ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#4696f9f0a86088dc7ef3e18d0ab89ff2>
+        a               sh:NodeShape ;
+        rdfs:label      "U M T S" ;
+        sh:name         "U M T S" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :UMTS .
+
+<https://astrea.linkeddata.es/shapes#172382a059e61f60b739a6e8d904fff3>
+        a            sh:PropertyShape ;
+        rdfs:label   "lat" ;
+        sh:name      "lat" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://www.w3.org/2003/01/geo/wgs84_pos#lat> .
+
+<https://astrea.linkeddata.es/shapes#1bebeb416cd25031a409be367b8ea578>
+        a            sh:PropertyShape ;
+        rdfs:label   "operator name" ;
+        sh:datatype  xsd:string ;
+        sh:name      "operator name" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :operatorName ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69>
+        a               sh:NodeShape ;
+        rdfs:label      "Device" ;
+        sh:name         "Device" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Device> .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#e998971669406de42a98dd8636c18ba2> , <https://astrea.linkeddata.es/shapes#1bebeb416cd25031a409be367b8ea578> , <https://astrea.linkeddata.es/shapes#79cd205625d4110f805e5d29a38a2077> , <https://astrea.linkeddata.es/shapes#36245374f10c92af9a0fb4f241aa6d69> , <https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d> , <https://astrea.linkeddata.es/shapes#f216b1fc3d3cfd7519a471207d7ac1a4> , <https://astrea.linkeddata.es/shapes#02bab2c0f81ab1bdbd3bc6c9078df297> , <https://astrea.linkeddata.es/shapes#04cd897cbb74434ab4ae511d32134236> , <https://astrea.linkeddata.es/shapes#172382a059e61f60b739a6e8d904fff3> , <https://astrea.linkeddata.es/shapes#b51543feb7bccc47145c0efa90c7ceab> , <https://astrea.linkeddata.es/shapes#8ca23bbe6d29253f61201ff69f64e13f> , <https://astrea.linkeddata.es/shapes#0705d79d023ad5774286503e07efc599> , <https://astrea.linkeddata.es/shapes#42a18bf7fa45c9586bad5e9683888d01> , <https://astrea.linkeddata.es/shapes#3ef793712378e097aac823894a277e63> , <https://astrea.linkeddata.es/shapes#4696f9f0a86088dc7ef3e18d0ab89ff2> , <https://astrea.linkeddata.es/shapes#4d34f2f7490d5ae914fa9d6df7367aaf> , <https://astrea.linkeddata.es/shapes#8e4189cde6df9931cf443d2b04401c2e> , <https://astrea.linkeddata.es/shapes#7f40ab3be559adf4758a17ffe97705b1> , <https://astrea.linkeddata.es/shapes#f0a59d55b934e94c124e20a7debd618e> , <https://astrea.linkeddata.es/shapes#e7990c6dd6a3dca6de078b32328bc4ef> , <https://astrea.linkeddata.es/shapes#65bfa643752cf5e2a6d08c688da545bc> , <https://astrea.linkeddata.es/shapes#5833984c28bb912ce1fa1aa52f1fbbe0> , <https://astrea.linkeddata.es/shapes#61a8b8d2fa833508abea68d1b95bc507> , <https://astrea.linkeddata.es/shapes#8abf947cc986ed936f5cb9fc126b130b> , <https://astrea.linkeddata.es/shapes#24a705279e993fcb3a858e7d1f569d3c> , <https://astrea.linkeddata.es/shapes#8205776f6cc763703225eeb9505b46a9> , <https://astrea.linkeddata.es/shapes#a0fc3e9f229688bc8950adec65f6178a> , <https://astrea.linkeddata.es/shapes#da4cc23f2fbb9fc9363501951269094c> , <https://astrea.linkeddata.es/shapes#6ddc0b40525de8d44aa81deabedaa0bf> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/1033925101> .
+
+<https://astrea.linkeddata.es/shapes#f0a59d55b934e94c124e20a7debd618e>
+        a               sh:NodeShape ;
+        rdfs:label      "C D M A" ;
+        sh:name         "C D M A" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :CDMA .
+
+<https://astrea.linkeddata.es/shapes#4d34f2f7490d5ae914fa9d6df7367aaf>
+        a            sh:PropertyShape ;
+        rdfs:label   "provides network" ;
+        sh:class     :Network ;
+        sh:name      "provides network" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :providesNetwork .
+
+<https://astrea.linkeddata.es/shapes#7f40ab3be559adf4758a17ffe97705b1>
+        a               sh:NodeShape ;
+        rdfs:label      "G S M" ;
+        sh:name         "G S M" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :GSM .
+
+<https://astrea.linkeddata.es/shapes#24a705279e993fcb3a858e7d1f569d3c>
+        a               sh:NodeShape ;
+        rdfs:label      "Place" ;
+        sh:name         "Place" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d> , <https://astrea.linkeddata.es/shapes#79cd205625d4110f805e5d29a38a2077> ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Place> .
+
+<https://astrea.linkeddata.es/shapes#3ef793712378e097aac823894a277e63>
+        a               sh:NodeShape ;
+        rdfs:label      "Point" ;
+        sh:name         "Point" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+
+<https://astrea.linkeddata.es/shapes#8e4189cde6df9931cf443d2b04401c2e>
+        a            sh:PropertyShape ;
+        rdfs:label   "cell id" ;
+        sh:datatype  xsd:string ;
+        sh:name      "cell id" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :cellId ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#e7990c6dd6a3dca6de078b32328bc4ef>
+        a            sh:PropertyShape ;
+        rdfs:label   "long" ;
+        sh:name      "long" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <http://www.w3.org/2003/01/geo/wgs84_pos#long> .
+
+<https://astrea.linkeddata.es/shapes#42a18bf7fa45c9586bad5e9683888d01>
+        a            sh:PropertyShape ;
+        rdfs:label   "created" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "created" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :created ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#79cd205625d4110f805e5d29a38a2077>
+        a            sh:PropertyShape ;
+        rdfs:label   "code" ;
+        sh:datatype  xsd:string ;
+        sh:name      "code" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#code> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#6ddc0b40525de8d44aa81deabedaa0bf>
+        a               sh:NodeShape ;
+        rdfs:label      "Feature" ;
+        sh:name         "Feature" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://www.geonames.org/ontology#Feature> .
+
+<https://astrea.linkeddata.es/shapes#b51543feb7bccc47145c0efa90c7ceab>
+        a               sh:NodeShape ;
+        rdfs:label      "4 G" ;
+        sh:name         "4 G" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :4G .
+
+<https://astrea.linkeddata.es/shapes#5833984c28bb912ce1fa1aa52f1fbbe0>
+        a               sh:NodeShape ;
+        rdfs:label      "L T E" ;
+        sh:name         "L T E" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :LTE .
+
+<https://astrea.linkeddata.es/shapes#f216b1fc3d3cfd7519a471207d7ac1a4>
+        a            sh:PropertyShape ;
+        rdfs:label   "location" ;
+        sh:class     <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+        sh:name      "location" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://www.owl-ontologies.com/geo#location> .
+
+<https://astrea.linkeddata.es/shapes#0a3772dac6bfb2034a3fd1aebcb0614d>
+        a            sh:PropertyShape ;
+        rdfs:label   "name" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      <https://auroral.iot.linkeddata.es/def/core#name> ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#8abf947cc986ed936f5cb9fc126b130b>
+        a               sh:NodeShape ;
+        rdfs:label      "Range" ;
+        sh:name         "Range" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#65bfa643752cf5e2a6d08c688da545bc> ;
+        sh:targetClass  :Range .
+
+<https://astrea.linkeddata.es/report/1033925101>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://auroral.iot.linkeddata.es/def/cell-Tower/ontology.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#da4cc23f2fbb9fc9363501951269094c>
+        a            sh:PropertyShape ;
+        rdfs:label   "country" ;
+        sh:class     <https://auroral.iot.linkeddata.es/def/core#Place> ;
+        sh:name      "country" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :country .
