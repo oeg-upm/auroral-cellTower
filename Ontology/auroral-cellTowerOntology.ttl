@@ -20,7 +20,8 @@
                                                           "Juan Cano Benito" ,
                                                           "María Poveda Villalón" ,
                                                           "Raúl García Castro" ;
-                                               dc:description "Ontology code created by Chowlk" .
+                                               dc:description "This ontology aims at modelling the cell-tower information for the AURORAL project." ;
+                                               dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> .
 
 #################################################################
 #    Annotation properties
@@ -34,41 +35,45 @@ dc:creator rdf:type owl:AnnotationProperty .
 dc:description rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  http://www.owl-ontologies.com/geo#location
 <http://www.owl-ontologies.com/geo#location> rdf:type owl:ObjectProperty ;
-                                             rdfs:domain cell:CellTowers ;
+                                             rdfs:domain cell:CellTower ;
                                              rdfs:range geo:Point ;
                                              rdfs:label "location" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cell#country
 cell:country rdf:type owl:ObjectProperty ;
-             rdfs:domain cell:CellTowers ;
+             rdfs:domain cell:CellTower ;
              rdfs:range core:Country ;
              rdfs:label "country" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cell#hasOperator
 cell:hasOperator rdf:type owl:ObjectProperty ;
-                 rdfs:domain cell:CellTowers ;
+                 rdfs:domain cell:CellTower ;
                  rdfs:range cell:Operator ;
                  rdfs:label "has operator" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cell#hasRange
 cell:hasRange rdf:type owl:ObjectProperty ;
-              rdfs:domain cell:CellTowers ;
+              rdfs:domain cell:CellTower ;
               rdfs:range cell:Range ;
               rdfs:label "has range" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cell#providesNetwork
 cell:providesNetwork rdf:type owl:ObjectProperty ;
-                     rdfs:domain cell:CellTowers ;
+                     rdfs:domain cell:CellTower ;
                      rdfs:range cell:Network ;
                      rdfs:label "provides network" .
 
@@ -91,14 +96,14 @@ geo:long rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/cell#cellId
 cell:cellId rdf:type owl:DatatypeProperty ;
-            rdfs:domain cell:CellTowers ;
+            rdfs:domain cell:CellTower ;
             rdfs:range xsd:string ;
             rdfs:label "cell id" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cell#created
 cell:created rdf:type owl:DatatypeProperty ;
-             rdfs:domain cell:CellTowers ;
+             rdfs:domain cell:CellTower ;
              rdfs:range xsd:dateTime ;
              rdfs:label "created" .
 
@@ -165,10 +170,10 @@ cell:CDMA rdf:type owl:Class ;
           rdfs:label "C D M A" .
 
 
-###  https://auroral.iot.linkeddata.es/def/cell#CellTowers
-cell:CellTowers rdf:type owl:Class ;
-                rdfs:subClassOf core:Device ;
-                rdfs:label "Cell Towers" .
+###  https://auroral.iot.linkeddata.es/def/cell#CellTower
+cell:CellTower rdf:type owl:Class ;
+               rdfs:subClassOf core:Device ;
+               rdfs:label "Cell Tower" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cell#GSM
