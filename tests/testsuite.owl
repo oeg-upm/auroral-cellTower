@@ -1,0 +1,134 @@
+@prefix : <https://auroral.iot.linkeddata.es/def/tests/cell#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://auroral.iot.linkeddata.es/def/tests/cell#> .
+
+<https://auroral.iot.linkeddata.es/def/tests/cell#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/def/vtc#belongsTo
+<https://w3id.org/def/vtc#belongsTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vtc#TestSuite
+<https://w3id.org/def/vtc#TestSuite> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/vtc#Test1
+<https://w3id.org/def/vtc#Test1> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "CellTower subClassOf Device" .
+
+
+###  https://w3id.org/def/vtc#Test10
+<https://w3id.org/def/vtc#Test10> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "CellTower hasOperator Operator" .
+
+
+###  https://w3id.org/def/vtc#Test11
+<https://w3id.org/def/vtc#Test11> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "CellTower hasRange Range" .
+
+
+###  https://w3id.org/def/vtc#Test12
+<https://w3id.org/def/vtc#Test12> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "CellTower location Point" .
+
+
+###  https://w3id.org/def/vtc#Test13
+<https://w3id.org/def/vtc#Test13> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "CellTower providesNetwork Network" .
+
+
+###  https://w3id.org/def/vtc#Test2
+<https://w3id.org/def/vtc#Test2> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Country subClassOf Feature" .
+
+
+###  https://w3id.org/def/vtc#Test3
+<https://w3id.org/def/vtc#Test3> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "4G subClassOf Network" .
+
+
+###  https://w3id.org/def/vtc#Test4
+<https://w3id.org/def/vtc#Test4> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "5G subClassOf Network" .
+
+
+###  https://w3id.org/def/vtc#Test5
+<https://w3id.org/def/vtc#Test5> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "CDMA subClassOf Network" .
+
+
+###  https://w3id.org/def/vtc#Test6
+<https://w3id.org/def/vtc#Test6> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "GSM subClassOf Network" .
+
+
+###  https://w3id.org/def/vtc#Test7
+<https://w3id.org/def/vtc#Test7> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "LTE subClassOf Network" .
+
+
+###  https://w3id.org/def/vtc#Test8
+<https://w3id.org/def/vtc#Test8> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "UMTS subClassOf Network" .
+
+
+###  https://w3id.org/def/vtc#Test9
+<https://w3id.org/def/vtc#Test9> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteCell> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "CellTower country Country" .
+
+
+###  https://w3id.org/def/vtc#TestSuiteCell
+<https://w3id.org/def/vtc#TestSuiteCell> rdf:type owl:NamedIndividual ,
+                                                  <https://w3id.org/def/vtc#TestSuite> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
