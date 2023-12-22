@@ -15,8 +15,12 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#CDMA" title="https://auroral.iot.linkeddata.es/def/cell#CDMA">C D M A</a>
       </li>
       <li>
-         <a href="#CellTowers"
-            title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+         <a href="#CellTower"
+            title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
+      </li>
+      <li>
+         <a href="#https://auroral.iot.linkeddata.es/def/core#Country"
+            title="https://auroral.iot.linkeddata.es/def/core#Country">Country</a>
       </li>
       <li>
          <a href="#https://auroral.iot.linkeddata.es/def/core#Device"
@@ -40,13 +44,11 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/cell#Operator">Operator</a>
       </li>
       <li>
-         <a href="#https://auroral.iot.linkeddata.es/def/core#Place" title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
-      </li>
-      <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a>
       </li>
       <li>
-         <a href="#Range" title="https://auroral.iot.linkeddata.es/def/cell#Range">Range</a>
+         <a href="#RangeCellTower"
+            title="https://auroral.iot.linkeddata.es/def/cell#RangeCellTower">Range Cell Tower</a>
       </li>
       <li>
          <a href="#UMTS" title="https://auroral.iot.linkeddata.es/def/cell#UMTS">U M T S</a>
@@ -59,6 +61,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#4G</p>
+      <div class="comment">
+         <span class="markdown">fourth-generation: relating to or using a technology that gives mobile phone and computer users more advanced features than 3G</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -75,6 +80,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#5G</p>
+      <div class="comment">
+         <span class="markdown">5G is the 5th generation mobile network. It is a new global wireless standard after 1G, 2G, 3G, and 4G networks. 5G enables a new kind of network that is designed to connect virtually everyone and everything together including machines, objects, and devices.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -91,6 +99,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#CDMA</p>
+      <div class="comment">
+         <span class="markdown">CDMA (Code-Division Multiple Access) refers to any of several protocols used in second-generation (2G) and third-generation (3G) wireless communications.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -100,13 +111,16 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="CellTowers">
-      <h3>Cell Towers<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="CellTower">
+      <h3>Cell Tower<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#CellTowers</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#CellTower</p>
+      <div class="comment">
+         <span class="markdown">Cell towers, also known as cell sites, are where electric communications equipment and antennae are mounted, allowing the surrounding area to use wireless communication devices like telephones and radios</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -133,6 +147,36 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://auroral.iot.linkeddata.es/def/core#Country">
+      <h3>Country<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#Country</p>
+      <div class="comment">
+         <span class="markdown">Specifies the country where a cell tower is installed</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#code" title="https://auroral.iot.linkeddata.es/def/core#code">code</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#name" title="https://auroral.iot.linkeddata.es/def/core#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#country"
+               title="https://auroral.iot.linkeddata.es/def/cell#country">country</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://auroral.iot.linkeddata.es/def/core#Device">
       <h3>Device<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -140,11 +184,14 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#Device</p>
+      <div class="comment">
+         <span class="markdown">A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#CellTowers"
-               title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+            <a href="#CellTower"
+               title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -156,10 +203,14 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.geonames.org/ontology#Feature</p>
+      <div class="comment">
+         <span class="markdown">Refers to the location of an entity</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://auroral.iot.linkeddata.es/def/core#Place" title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
+            <a href="#https://auroral.iot.linkeddata.es/def/core#Country"
+               title="https://auroral.iot.linkeddata.es/def/core#Country">Country</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -171,6 +222,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#GSM</p>
+      <div class="comment">
+         <span class="markdown">A global system for mobile telecommunications: a technical system for mobile phones used in many countries: GSM network The phone company has placed a large order for GSM network equipment.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -187,6 +241,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#LTE</p>
+      <div class="comment">
+         <span class="markdown">LTE (Long-Term Evolution) is a fourth-generation (4G) wireless standard that provides increased network capacity and speed for cellphones and other cellular devices compared with third-generation (3G) technology.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -203,6 +260,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#Network</p>
+      <div class="comment">
+         <span class="markdown">Determines the type of networks that could  be provided by a network</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -235,6 +295,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#Operator</p>
+      <div class="comment">
+         <span class="markdown">Determines the owners and the operator of a device or an object</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -252,33 +315,6 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://auroral.iot.linkeddata.es/def/core#Place">
-      <h3>Place<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#Place</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://auroral.iot.linkeddata.es/def/core#code" title="https://auroral.iot.linkeddata.es/def/core#code">code</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://auroral.iot.linkeddata.es/def/core#name" title="https://auroral.iot.linkeddata.es/def/core#name">name</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#country"
-               title="https://auroral.iot.linkeddata.es/def/cell#country">country</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
       <h3>Point<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -286,6 +322,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#Point</p>
+      <div class="comment">
+         <span class="markdown">Represents a geospatial information of a givem location</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -300,13 +339,16 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Range">
-      <h3>Range<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="RangeCellTower">
+      <h3>Range Cell Tower<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#Range</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#RangeCellTower</p>
+      <div class="comment">
+         <span class="markdown">The range of a cell tower is defined as the working area within which mobile devices can connect reliably to the cell tower.</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -328,6 +370,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#UMTS</p>
+      <div class="comment">
+         <span class="markdown">Universal Mobile Telecommunications System: a system for sending text, voice, and video data to mobile phones and computers</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -369,17 +414,21 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#country</p>
+      <div class="comment">
+         <span class="markdown">A relationship between the cellTower and the country where it is installed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Place" title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
+               <a href="#https://auroral.iot.linkeddata.es/def/core#Country"
+                  title="https://auroral.iot.linkeddata.es/def/core#Country">Country</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -392,12 +441,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#hasOperator</p>
+      <div class="comment">
+         <span class="markdown">A relationship between the CellTower and its Operator</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -416,17 +468,21 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#hasRange</p>
+      <div class="comment">
+         <span class="markdown">A relationship between the Operator and its range</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Range" title="https://auroral.iot.linkeddata.es/def/cell#Range">Range</a>
+               <a href="#RangeCellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#RangeCellTower">Range Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -439,12 +495,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.owl-ontologies.com/geo#location</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the cell tower and its geospatial coordinates</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -462,12 +521,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#providesNetwork</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the cellTower and the network that it provides</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -527,12 +589,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#cellId</p>
+      <div class="comment">
+         <span class="markdown">The identifer of a cellTower</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -551,11 +616,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#code</p>
+      <div class="comment">
+         <span class="markdown">The code of a country</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Place" title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
+               <a href="#https://auroral.iot.linkeddata.es/def/core#Country"
+                  title="https://auroral.iot.linkeddata.es/def/core#Country">Country</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -574,12 +643,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#created</p>
+      <div class="comment">
+         <span class="markdown">The created time of a cellTower</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#CellTowers"
-                  title="https://auroral.iot.linkeddata.es/def/cell#CellTowers">Cell Towers</a>
+               <a href="#CellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#CellTower">Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -598,6 +670,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#lat</p>
+      <div class="comment">
+         <span class="markdown">The latitude of a given location</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -615,6 +690,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#long</p>
+      <div class="comment">
+         <span class="markdown">The longitude of a given location</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -632,11 +710,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#name</p>
+      <div class="comment">
+         <span class="markdown">The name of a country</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#Place" title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
+               <a href="#https://auroral.iot.linkeddata.es/def/core#Country"
+                  title="https://auroral.iot.linkeddata.es/def/core#Country">Country</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -655,6 +737,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#networkCode</p>
+      <div class="comment">
+         <span class="markdown">The code of a network</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -679,6 +764,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#operatorId</p>
+      <div class="comment">
+         <span class="markdown">The identifier of an operator</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -703,6 +791,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#operatorName</p>
+      <div class="comment">
+         <span class="markdown">The name of an operator</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -727,11 +818,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cell#range</p>
+      <div class="comment">
+         <span class="markdown">The range of a CellTower</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Range" title="https://auroral.iot.linkeddata.es/def/cell#Range">Range</a>
+               <a href="#RangeCellTower"
+                  title="https://auroral.iot.linkeddata.es/def/cell#RangeCellTower">Range Cell Tower</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
